@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./drum_machine.css" />
+        <script src="./drum_machine.js"></script>
+    </head>
+  <body>
+    <div class="outer-container" id="drum-machine">
+        <button onClick="clip(this.value)" class="drum-pad" value="Q" id="clip-q">
+          Q
+          <audio src= 'https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3' id="Q" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="W" id="clip-w">
+          W
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3' id="W" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="E" id="clip-e">
+          E
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3' id="E" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="A" id="clip-a">
+          A
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3' id="A" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="S" id="clip-s">
+          S
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3' id="S" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="D" id="clip-d">
+          D
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3' id="D" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="Z" id="clip-z">
+          Z
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3' id="Z" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="X" id="clip-x">
+          X
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3' id="X" class="clip"></audio>
+        </button>
+        <button onClick="clip(this.value)" class="drum-pad" value="C" id="clip-c">
+          C
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3' id="C" class="clip"></audio>
+        </button>
+      <div id="display"></div>
+      <input type="range" id="vol" max="1" min="0" step="0.01" onchange="getVolume(this.value)" />
+      </div>
+  </body>
+</html>
