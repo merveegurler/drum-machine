@@ -1,2 +1,2 @@
 # drum-machine
-A drum machine with HTML/CSS/JavaScript
+A drum machine HTML/CSS/JavaScript
